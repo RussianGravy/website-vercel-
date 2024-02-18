@@ -78,6 +78,7 @@ body {
 #SF_Maps {
     background-color: rgb(161, 11, 255);
     color: white;
+    overflow: hidden;
 }
 #SF_Maps h2 {
     color: gold;
