@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Valentine Jones-Metsiou">
+        <link rel="stylesheet" href="stylesheets/bio.css">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <img id="logo" src="../images/logo.png" onclick="goNext('../index.html')">
+            <p id="name">Valentine Jones</p>
+            <ul>
+                <li><a href="../otherpages/contact.html">Contact</a></li>
+                <li><a href="../otherpages/frontend.html">Web-Dev Projects</a></li>
+                <li><a href="../otherpages/drawings.html">Illustrations</a></li>
+            </ul>
+            <script>
+                function goNext(url){
+                    window.open(url, "_self");
+                } //shoud've made these links
+            </script>
+        </nav> <!-- End of Nav -->
+
+        <div style="height: 100vh; width: 100vw; position: relative; display: flex; flex-direction: column;">
+            <div id="cover">
+                <img src="../images/bio_pic.png">
+                <div> 
+                    <h1>Valentine Jones-Metsiou</h1>
+                    <p>Computer Science Major at San Francisco State University</p>
+                </div>
+            </div> <!--End of Cover-->
+
+            <div id="content" style="flex-direction: column;">
+                <p>
+                    I am a part-time instructor at Learn2Code, and a practicing front-end web developer and illustrator. <br> <br>
+
+                    I enjoy making dynamic web pages that entertain users and deliver information effectively. 
+                    I've been practicing front-end web development since 2022 and this website is my most ambitious
+                    project so far. I'm still discovering my style as an illustrator but I love to draw cartoon, and anyone interested in 
+                    child-freindly design will find that I am a perfect choice. <br> <br>
+                    
+                    I also designed the logo and the user interface for a navigation app me and my friends made 
+                    called: SF Maps. This is an ongoing project that aims to make navigating our university campus easier 
+                    for new students. Most notably, SF Maps will remember
+                    the user's class schedule and it will build routes automatically based on their location and the time of day.
+                </p> 
+                <div id="links" style="margin: 1.5vh">
+                    <a href="frontend.html">Past Projects</a>
+                    <a href="drawings.html">Illustrations</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div> <!--End of Content-->
+        </div> <!--End of Page-->
+    </body>
+
+</html>

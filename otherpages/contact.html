@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Valentine Jones-Metsiou">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <img id="logo" src="../images/logo.png" onclick="goNext('../index.html')">
+            <p id="name">Valentine Jones</p>
+            <ul>
+                <li><a href="../otherpages/contact.html">Contact</a></li>
+                <li><a href="../otherpages/frontend.html">Web-Dev Projects</a></li>
+                <li><a href="../otherpages/drawings.html">Illustrations</a></li>
+            </ul>
+            <script>
+                function goNext(url){
+                    window.open(url, "_self");
+                } //shoud've made these links
+            </script>
+        </nav> <!-- End of Nav -->
+        <div style="height: 100vh; width: 100vw; position: relative; display: flex;">
+            <div id="contacts">
+                <a style="display: flex; flex-direction: row; align-items: center; padding: 30px;">
+                    <img src="../images/misc. icons/email_icon.png">
+                    <h1>valentine.artstuff@gmail.com</h1>
+                </a>
+                <a style="display: flex; flex-direction: row; align-items: center; padding: 30px;" href="https://www.instagram.com/russiangravy/">
+                    <img src="../images/misc. icons/insta_icon.png">
+                    <h1> @russiangravy</h1>
+                </a>
+            </div>
+        </div> 
+
+    <!-- STYLING BELOW. WHY DIDN'T I USE A DEDICATED SHEET? I DON'T KNOW BUT I DID ALL RIGHT WITHOUT ONE. -->
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                background-color: pink;
+                overflow: hidden; /* no more scrolling when items are too large */
+            }
+            #navbar {
+                position: relative;
+                width: 100vw;
+                z-index: 20;
+                background-color: black;
+                display: flex;
+            }
+            #logo {
+                height: 4vw; 
+                width: 4vw; 
+                padding: 0px 1vmin 0px 2vmin;
+                cursor: pointer;
+            }
+            #name {
+                color: white;
+                font-size: 2vw;
+                font-family: Arial, Helvetica, sans-serif;
+                flex-grow: 1; /* Fills remaining space */
+                align-self: center;
+            }
+            #navbar ul {
+                list-style: none;
+                padding: 0; 
+                margin: 0;
+                text-align: center;
+                overflow: hidden;
+            }
+            #navbar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                height: 100%;
+                font-size: 2vw;
+                padding: 1vw;
+            }
+            #navbar a:hover {
+                background-color: #FF4A4A;;
+                cursor: pointer;
+            }
+            #navbar li{
+                float: right;
+            }
+            h1 {
+                margin-left: 1vw; 
+                font-size: 3vw;
+            }
+            #contacts img {
+                width: 4vw; 
+                height: 4vw;
+            }
+            @media(orientation: portrait){
+                #logo {
+                    width: 8vw;
+                    height: 8vw;
+                }
+                #name {
+                    font-size: 3vw;
+                }   
+                #navbar a {
+                    font-size: 3.5vw;
+                    padding: 2vw;
+                }
+                h1 {
+                    font-size: 5vw;
+                }
+                #contacts img {
+                    width: 6vw; 
+                    height: 6vw;
+                }
+            }
+        </style>
+    </body>
+
+</html>

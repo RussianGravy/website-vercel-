@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Valentine Jones-Metsiou">
+        <link rel="stylesheet" href="stylesheets/frontend.css">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <img id="logo" src="../images/logo.png" onclick="goNext('../index.html')">
+            <p id="name">Valentine Jones</p>
+            <ul>
+                <li><a href="../otherpages/contact.html">Contact</a></li>
+                <li><a href="../otherpages/frontend.html">Web-Dev Projects</a></li>
+                <li><a href="../otherpages/drawings.html">Illustrations</a></li>
+            </ul>
+            <script>
+                function goNext(url){
+                    window.open(url, "_self");
+                } //shoud've made these links
+            </script>
+        </nav> <!-- End of Nav -->
+    
+        <h1">Web-Dev Projects</h1>        
+        <div id="project_list">
+            <h1 style="margin-bottom: 1vh;">Web-Dev Projects</h1>
+            <div id="SF_Maps" class="project">
+                <div class="header">
+                    <img src="../images/illustrations/gator_logo.png">
+                    <h2>SF_Maps</h2>
+                </div>
+                <p>
+                    This is my favorite project everrr!
+                </p>
+            </div>
+            <div id="SF_Maps" class="project">
+                <div class="header">
+                    <img src="../images/illustrations/gator_logo.png">
+                    <h2>SF_Maps</h2>
+                </div>
+                <p>
+                    This is my favorite project everrr!
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

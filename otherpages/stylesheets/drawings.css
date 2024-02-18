@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/blank_wall2.jpeg");
+    background-color: white;
+}
+
+.col {
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#left_colunn div{
+    margin-bottom: 200px;
+}
+
+#right_column div{
+    margin-top: 200px;
+}
+
+.illustration {
+    width: 36vw;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin: 1vw;
+}
+.frame {
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+.art {
+    margin: 5%;
+    aspect-ratio: 1/1;
+    width: 90%;
+    background-color: white;
+}
+.plaque {
+    width: fit-content;
+    height: 7.5%;
+    font-size: 2vw;
+    margin: 5px auto 0 auto;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    background-color: gold;
+    border: 0.65vw outset rgb(175, 143, 14);
+    color: brown;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+    background-color: black;
+    display: flex;
+}
+#logo {
+    height: 4vw; 
+    width: 4vw; 
+    padding: 0px 1vmin 0px 2vmin;
+    cursor: pointer;
+}
+#name {
+    color: white;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1; /* Fills remaining space */
+    align-self: center;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    font-size: 2vw;
+    padding: 1vw;
+}
+#navbar a:hover {
+    background-color: #FF4A4A;;
+    cursor: pointer;
+}
+#navbar li{
+    float: right;
+}
+@media(orientation: portrait){
+    #banner {
+        padding-top: 9vw;
+    }
+    #logo {
+        width: 8vw;
+        height: 8vw;
+    }
+    #name {
+        font-size: 3vw;
+    }   
+    #navbar a {
+        font-size: 3.5vw;
+        padding: 2vw;
+    }
+    .illustration {
+        width: 44vw;
+    }
+}
