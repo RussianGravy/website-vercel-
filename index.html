@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home | Valentine Jones-Metsiou</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Valentine Jones-Metsiou">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <img id = "logo" src="images/logo.png">
+            <p id="name">Valentine Jones</p>
+            <ul>
+                <li><a href="otherpages/contact.html">Contact</a></li>
+                <li><a href="otherpages/frontend.html">Web-Dev Projects</a></li>
+                <li><a href="otherpages/drawings.html">Illustrations</a></li>
+            </ul>
+        </nav>
+        <div style="height: 100vh; width: 100vw; position: relative; display: flex;">
+            <canvas id="background"></canvas>
+            <div id="buttonContainer">
+                <button id="programmer" class="bubbleButton" onclick="goNext('otherpages/frontend.html')">
+                    <img src="images/compButton.png" id="comp" class="buttonIcon">
+                    <p class="hidden_text">Test My Projects</p>
+                </button>
+                <button id="title" class="bubbleButton" onclick="goNext('otherpages/bio.html')">
+                    <img src="images/profile2.png" id="profile" class="buttonIcon">
+                    <p class="hidden_text">Learn About Me</p>
+                </button>
+                <button id="illustrator" class="bubbleButton" onclick="goNext('otherpages/drawings.html')">
+                    <img src="images/penButton.png" id="pen" class="buttonIcon">
+                    <p class="hidden_text">See My Drawings</p>
+                </button>
+                <script>
+                    function goNext(url){
+                        window.open(url, "_self");
+                    } //shoud've made these links
+                </script>
+            </div>
+        </div>
+
+    <!-- STYLING BELOW. WHY DIDN'T I USE A DEDICATED SHEET? I DON'T KNOW BUT I DID ALL RIGHT WITHOUT ONE. -->
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                background-color: rgb(50,50,50);
+                /* overflow: hidden; */
+                /* no more scrolling when items are too large */
+            }
+            #navbar {
+                position: fixed;
+                width: 100vw;
+                z-index: 20;
+                background-color: black;
+                display: flex;
+            }
+            #logo {
+                height: 4vw; 
+                width: 4vw; 
+                padding: 0px 1vmin 0px 2vmin;
+            }
+            #name {
+                color: white;
+                font-size: 2vw;
+                font-family: Arial, Helvetica, sans-serif;
+                flex-grow: 1; /* Fills remaining space */
+                align-self: center;
+            }
+            #navbar ul {
+                list-style: none;
+                padding: 0; 
+                margin: 0;
+                text-align: center;
+                overflow: hidden;
+            }
+            #navbar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                height: 100%;
+                font-size: 2vw;
+                padding: 1vw;
+            }
+            #navbar a:hover {
+                background-color: #FF4A4A;;
+                cursor: pointer;
+            }
+            #navbar li{
+                float: right;
+            }
+            #background {
+                width: 100%;
+                height: 100%;
+                position: absolute; /* used to be position: absolute */
+                z-index: -1;
+            }
+            #buttonContainer {
+                width: fit-content; 
+                height: fit-content; 
+                margin: auto; 
+                display: flex; 
+                align-items: center;
+            }
+            .bubbleButton {
+                background-color: black;
+                opacity: 85%;
+                aspect-ratio: 1 / 1;
+                width: 20vmax; /* change to vmax? */
+                border-radius: 30vmax;
+                border-color: white;
+                border-style: solid;
+                border-width: 5px;
+                transition: background-color 100ms ease;
+                overflow: hidden;
+                position: relative;
+            }
+            .bubbleButton:hover{
+                transform: scale(1.05);
+                opacity: 100%;
+                cursor: pointer;
+                cursor: pointer;
+            }
+            .buttonIcon {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition: opacity 225ms ease;
+            }
+            .buttonIcon:hover{
+                opacity: 15%;
+            }
+            #title {
+                opacity: 1;
+                aspect-ratio: 1 / 1;
+                width: 25vmax; /* change to vmax? */
+                margin-left: 5vmin;
+                margin-right: 5vmin;
+            }
+            .hidden_text {
+                color: white;
+                font-size: 3.85vmin;
+                margin: auto;
+                align-self: center;
+                z-index: 100;
+            }  
+            @media(orientation: portrait){
+                #logo {
+                    width: 8vw;
+                    height: 8vw;
+                }
+                #name {
+                    font-size: 3vw;
+                }   
+                #navbar a {
+                    font-size: 3.5vw;
+                    padding: 2vw;
+                }
+                #title {
+                    width: 27vh; 
+                    border-radius: 32vh;
+                    margin: 5vmin;
+                    /* order: -1;  */
+                }
+                .bubbleButton {
+                    width: 23vh;
+                    border-radius: 26vh;
+                    /* margin: 2.5vmin;  */
+                }    
+                #buttonContainer {
+                    display: flex; 
+                    flex-direction: column;
+                    margin: 15vw auto 0 auto;
+                }
+            }
+        </style>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script src="elements.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
