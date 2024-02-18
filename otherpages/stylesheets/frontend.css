@@ -76,15 +76,15 @@ body {
     height: 75px;
 }
 #SF_Maps {
-    background-color: rgb(179, 57, 255);
+    background-color: rgb(161, 11, 255);
     color: white;
 }
 #SF_Maps h2 {
     color: gold;
 }
 #SF_Maps img {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
 }
 @media(orientation: portrait){
     #logo {
