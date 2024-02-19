@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    background-color: pink;
+    background-color: rgb(223, 223, 223);
 }
 #navbar {
     position: fixed;
@@ -61,7 +61,7 @@ body {
     margin: 1vw;
     padding: 1vw;
     border-radius: 43px;
-    background-color: grey;
+    background-color: rgb(34, 34, 34);
 }
 .header {
     width: 100%;
@@ -69,14 +69,14 @@ body {
     align-items: center;
 }
 .header h2 {
-    color: lightgrey;
+    color: white;
 }
 .header img {
     width: 75px;
     height: 75px;
 }
 #SF_Maps {
-    background-color: rgb(161, 11, 255);
+    background-color: #9b0bf5;
     color: white;
     overflow: hidden;
 }
