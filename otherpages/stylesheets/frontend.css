@@ -47,6 +47,10 @@ body {
 #navbar li{
     float: right;
 }
+/* #webdev_button {
+    background-color: #FF4A4A;
+    border: 1px solid white;
+} */
 #project_list{
     width: 88vw;
     padding-top: 6vw;

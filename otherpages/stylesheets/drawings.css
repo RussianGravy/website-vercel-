@@ -95,6 +95,10 @@ body {
 #navbar li{
     float: right;
 }
+/* #draw_button {
+    background-color: #FF4A4A;
+    border: 1px solid white;
+} */
 @media(orientation: portrait){
     #banner {
         padding-top: 9vw;
