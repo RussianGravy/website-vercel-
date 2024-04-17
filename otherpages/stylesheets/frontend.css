@@ -90,7 +90,8 @@ body {
 }
 #dijkstra {
     background-color: rgb(224, 27, 27);
-    color: white;
+    border: 2px solid rgb(111, 2, 2);
+    color: white;    
 }
 @media(orientation: portrait){
     #logo {
