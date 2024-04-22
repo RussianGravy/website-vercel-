@@ -1,6 +1,7 @@
-# russiangravy.github.io
-My personal website!
+# https://valentine-jones.vercel.app
 
-See my illustrations
+## My personal website!
 
-Test my projects
+See my *illustrations*
+
+Test my *projects*
