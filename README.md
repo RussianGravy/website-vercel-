@@ -1,7 +1,7 @@
-# https://valentine-jones.vercel.app
+# My personal website!
 
-## My personal website!
+## https://valentine-jones.vercel.app
 
-See my *illustrations*
+- See my *illustrations*
 
-Test my *projects*
+- Test my *projects*
