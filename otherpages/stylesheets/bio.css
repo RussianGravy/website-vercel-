@@ -74,13 +74,13 @@ body {
 }
 #cover h1 {
     color: black;
-    font-size: 4vw;
+    font-size: 4.8vw;
     align-self: center;
     margin-left: 1vw;
 }
 #cover p {
     margin-left: 3.5vw;
-    font-size: 1.75vw;
+    font-size: 2vw;
 }
 #links a {
     color: darkblue;
