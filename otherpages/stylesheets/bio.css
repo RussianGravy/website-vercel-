@@ -6,6 +6,9 @@
 body {
     background-color: rgb(187, 64, 64);
 }
+#sect2 {
+    padding-top: 0.5vw;
+}
 #navbar {
     position: fixed;
     width: 100vw;
