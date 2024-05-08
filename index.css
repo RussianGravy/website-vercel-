@@ -9,8 +9,8 @@ body {
     background-color: rgb(50,50,50);
 }
 section {
-    /*scroll-snap-align: start;
-    min-height: 100vh;*/
+    /*scroll-snap-align: start;*/
+    min-height: 100vh;
 }
 #navbar {
     position: fixed;
