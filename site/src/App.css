@@ -1,0 +1,124 @@
+/* Ensure the page takes full height */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background: #f0f0f0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+/* Optional hover effect */
+footer li a:hover {
+  color: #000;
+}
+
+
+/* Header layout */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #eaeaea;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+/* h3 stylish placement under header */
+h3 {
+  margin: 0.5rem 1rem 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Projects carousel */
+.projects-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  min-width: 200px;
+  height: 100px;
+  background: #dce4f0;
+  border-radius: 8px;
+  padding: 1rem;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile / portrait adjustments */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  header h1 {
+    font-size: 5vw; /* Responsive font size */
+    white-space: nowrap; /* Prevent wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90vw; /* Avoid overflow on small screens */
+  }
+
+  h3 {
+    font-size: 4vw;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+}
