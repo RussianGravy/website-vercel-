@@ -1,0 +1,26 @@
+[
+  {
+    "title": "WebGL Graphing Tool",
+    "description": "A web app that utilizes webgl to render user-made graphs.",
+    "image_url": "/graphing_tool.gif",
+    "project_url": "https://github.com/RussianGravy/WebGL-Graphing-Tool"
+  },
+  {
+    "title": "Flashcard App",
+    "description": "Social Flashcard App utilizing React and Firebase.",
+    "image_url": "/study_app.gif",
+    "project_url": "https://study-app-seven.vercel.app/"
+  },
+  {
+    "title": "Russian Mailing List",
+    "description": "Runs by cron job and uses Gemini API to generate vocab.",
+    "image_url": "/mailing_list.png",
+    "project_url": "https://github.com/RussianGravy/Russian-Word-Of-The-Day"
+  },
+  {
+    "title": "Minoa Internal AI Tool",
+    "description": "AI tool that minimizes client research time and optimizes sales pitches.",
+    "image_url": "",
+    "project_url": "https://www.minoa.io/"
+  }
+]
