@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useReducer, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ExperienceGraph from "./components/ExperienceGraph";
 
 function App() {
@@ -57,6 +57,7 @@ function App() {
             <a
               href="https://docs.google.com/document/d/12lrd8haV3VrZm2Z9GcRufWe29WADJzQVEwtnS9chDeQ/edit?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               Resume
             </a>
