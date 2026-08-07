@@ -3,13 +3,13 @@
     "title": "WebGL Graphing Tool",
     "description": "A web app that utilizes webgl to render user-made graphs.",
     "image_url": "/graphing_tool.gif",
-    "project_url": "https://github.com/RussianGravy/WebGL-Graphing-Tool"
+    "project_url": "https://graphing-tool.valentinejones.com/"
   },
   {
     "title": "Flashcard App",
     "description": "Social Flashcard App utilizing React and Firebase.",
     "image_url": "/study_app.gif",
-    "project_url": "https://study-app-seven.vercel.app/"
+    "project_url": "https://flashcards.valentinejones.com/"
   },
   {
     "title": "Russian Mailing List",
