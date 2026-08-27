@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "cloud-cog",
+    "company": "Circe Healthcare Solutions",
+    "duration": "Nov. 2025 to Present",
+    "title": "Full Stack Cloud Engineer"
+  },
+  {
+    "icon": "code",
+    "company": "Stitch",
+    "duration": "Jan. 2025 to March 2025",
+    "title": "Intern"
+  },
+  {
+    "icon": "code",
+    "company": "ACM",
+    "duration": "Aug. 2024 to June 2025",
+    "title": "Software Engineer"
+  },
+  {
+    "icon": "lightbulb",
+    "company": "Learn2Code",
+    "duration": "Jan. 2024 to June 2024",
+    "title": "Instructor"
+  }
+]
